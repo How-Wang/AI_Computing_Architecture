@@ -23,8 +23,9 @@
 
 
 ## Algorithm
-**費氏數列 fibonacci** 與 **數獨 sudoku** 兩者任務的演算法，皆為根據相同資料夾下的C檔，可以對於.c file 與 .S file 兩相對照，此外，為了易讀性，以下附上**數獨 sudoku** assembly code 的流程圖。
-![](https://i.imgur.com/hWAPW4u.png)
+**費氏數列 fibonacci** 與 **數獨 sudoku** 兩者任務的演算法，皆為根據相同資料夾下的C檔，可以對於.c file 與 .S file 兩相對照。  
+此外，為了易讀性，以下附上**數獨 sudoku** assembly code 的流程圖。
+![graph](https://user-images.githubusercontent.com/62500402/158010523-a0489eb9-b433-4c42-b97f-72a4cf730377.png)
 
 
 ## RISC-V Assembly Programming
