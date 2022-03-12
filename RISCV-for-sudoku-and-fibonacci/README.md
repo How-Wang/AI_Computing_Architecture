@@ -19,6 +19,8 @@
 - 而在 assembly code中，我們會利用 **stack pointer + memory** 進行資料的儲存，藉此確保程式需要呼叫另外一個 function 或是返回上一個  function 時資料正確。
 - register 對照表
 ![](https://playlab.computing.ncku.edu.tw:3001/uploads/upload_677e12f403993b93e2be2c308b3819d1.png)
+![image](https://user-images.githubusercontent.com/62500402/158007865-18b495de-b1a2-4473-b0ba-404602ca3400.png)
+
 
 ## Algorithm
 **費氏數列 fibonacci** 與 **數獨 sudoku** 兩者任務的演算法，皆為根據相同資料夾下的C檔，可以對於.c file 與 .S file 兩相對照，此外，為了易讀性，以下附上**數獨 sudoku** assembly code 的流程圖。
