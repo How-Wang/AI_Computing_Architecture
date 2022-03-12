@@ -14,6 +14,7 @@
 1. 函式的參數值
 2. 函式內暫存變數的值
 3. 返回位址 (return address)，也就是遞迴完成後，接續執行的程式位置
+
 ![](https://playlab.computing.ncku.edu.tw:3001/uploads/upload_7646564d47a7c6b5b6365293a764fd37.png)
 - 而在 assembly code中，我們會利用 **stack pointer + memory** 進行資料的儲存，藉此確保程式需要呼叫另外一個 function 或是返回上一個  function 時資料正確。
 - register 對照表
@@ -33,8 +34,8 @@
 - **費氏數列 fibonacci**
 ![](https://playlab.computing.ncku.edu.tw:3001/uploads/upload_7f9cd8a8b384680d82f4e02923d08171.jpg)
 
-- **數獨 2\*2 sudoku**
+- **數獨 2\*2 sudoku**  
 ![](https://playlab.computing.ncku.edu.tw:3001/uploads/upload_2a517798287cfd7b1d2fe468ee439bb0.png)
 
 ## 環境設置
-關於環境設置與執行方式，可以參考 [**playlab AIAS_2022_spring**](https://playlab.computing.ncku.edu.tw/AIAS_2022_spring.html) 的課程教學與環境安裝，故本 project 不在此多著墨介紹。
+關於環境設置與執行方式，可以參考 [**playlab AIAS_2022_spring**](https://playlab.computing.ncku.edu.tw/AIAS_2022_spring.html) 的課程教學與環境安裝，本 project 不在此多著墨介紹。
