@@ -37,4 +37,4 @@
 ![](https://playlab.computing.ncku.edu.tw:3001/uploads/upload_2a517798287cfd7b1d2fe468ee439bb0.png)
 
 ## 環境設置
-關於環境設置與，可以參考 [**playlab AIAS_2022_spring**](https://playlab.computing.ncku.edu.tw/AIAS_2022_spring.html) 的課程教學與環境安裝，故本 project 不在此多著墨介紹。
+關於環境設置與執行方式，可以參考 [**playlab AIAS_2022_spring**](https://playlab.computing.ncku.edu.tw/AIAS_2022_spring.html) 的課程教學與環境安裝，故本 project 不在此多著墨介紹。
