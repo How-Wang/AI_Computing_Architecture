@@ -7,9 +7,9 @@
 
 #### Software Design
 1. 因為software裡面僅有兩種新增的指令:
-- 分工：
-    1. 實作：[name=陳彥博] 24個指令
-    2. 檢查與驗證：[name=王浩]、[name=劉宗翰]
+- TODO work：
+    1. 實作
+    2. 檢查與驗證
 #### Hardware Design
 > 依照ISA-extensions指令，我們可以知道我們需要對OP-IMM和OP新增指令，因此我們需要修改兩個部分
 
