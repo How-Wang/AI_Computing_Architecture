@@ -7,7 +7,7 @@ fibonacci_asm:
 
 prologue:
 	addi   sp,sp,-4
-    sw     ra,0(sp)
+    	sw     ra,0(sp)
 
 fibonacci_start:
 	jal    fibonacci
@@ -23,41 +23,38 @@ fibonacci:
 	# call ret_one label
 	beq	   a0, x0, ret_zero
 	li     t0, 1    
-    beq    a0, t0, ret_one    
+    	beq    a0, t0, ret_one    
 	
 	# save caller info, and prepare space for a1 (fib return value)
-    addi   sp, sp, -12        # move sp to place ra, a0, a1
-    sw     ra, 0(sp)          # save ra
-    sw     a0, 4(sp)          # save current n (a0)
-    
-    addi   a0, a0, -1		  # change current n (a0) for callee argument
-    jal	   fibonacci		  # call first fib
-    sw     a1, 8(sp)          # save a1 (fib return value)
+    	addi   sp, sp, -12        # move sp to place ra, a0, a1
+    	sw     ra, 0(sp)          # save ra
+    	sw     a0, 4(sp)          # save current n (a0)
 
-    addi   a0, a0, -1		  # change current n (a0) for callee argument
-    jal	   fibonacci		  # call second fib
+    	addi   a0, a0, -1		  # change current n (a0) for callee argument
+    	jal	   fibonacci		  # call first fib
+    	sw     a1, 8(sp)          # save a1 (fib return value)
+
+    	addi   a0, a0, -1		  # change current n (a0) for callee argument
+    	jal	   fibonacci		  # call second fib
 
 	# recover caller info, and take last fib a1 out to t1
-    lw     ra, 0(sp)          # «ì´_ ra
-    lw     a0, 4(sp)          # «ì´_ current n (a0)
+    	lw     ra, 0(sp)          # Â«Ã¬Â´_ ra
+    	lw     a0, 4(sp)          # Â«Ã¬Â´_ current n (a0)
 	lw     t1, 8(sp)
-    addi   sp, sp, 12         # ²¾°Ê sp 
+    	addi   sp, sp, 12         # Â²Â¾Â°ÃŠ sp 
    
-    add    a1, t1, a1		  # ¬Û¥[¥X a1
-    jr     ra
+    	add    a1, t1, a1		  # Â¬Ã›Â¥[Â¥X a1
+    	jr     ra
 
 ret_one:
 	# load a1 1, and just return
 	# because we do not move the sp in caller (no need)
 	# we can go back to the caller's caller
-    li     a1, 1
-    jr     ra
+    	li     a1, 1
+    	jr     ra
 
 ret_zero:
 	mv	   a1, zero
 	jr     ra
-
-    # Write your assembly code funtion here.
-    # Please notice the rules of calling convention.
     
     .size fibonacci_asm, .-fibonacci_asm
